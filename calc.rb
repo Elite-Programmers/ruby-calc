@@ -14,8 +14,10 @@ def div(a,b)
   begin
     c = a / b
     return c
-  rescue
-    return("∞")
+  rescue ZeroDivisionError
+    return "∞"
+  else
+    return "Unable to decide"
   end
 end
 
